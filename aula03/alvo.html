@@ -27,7 +27,13 @@
         var x = evento.pageX - tela.offsetLeft;
         var y = evento.pageY - tela.offsetTop;
 
-       // lógica de acerto?
+        if ((x > 300 - raio) 
+            && (x < 300 + raio)
+                && (y > 200 - raio) 
+                    && (y < 200 + raio)) {
+
+            alert('Acertou');
+        }
     }
 
     tela.onclick = dispara;
